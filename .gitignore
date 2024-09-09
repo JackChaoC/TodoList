@@ -1,6 +1,5 @@
 node_modules
 uploads
 dist
-Vue_Todolist/node_modules
 Vue_Todolist/dist
 Vue_Todolist/*.zip
