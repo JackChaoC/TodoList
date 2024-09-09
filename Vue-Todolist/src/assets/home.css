@@ -1,0 +1,35 @@
+.main {
+    margin: 0px 50px;
+
+    .input {
+        min-width: 388px;
+        height: 40px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+
+        .el-button:nth-child(2) {
+            margin-left: 10px;
+            margin-top: 4px;
+        }
+
+    }
+
+    .el-dialog {
+        min-width: 350px;
+    }
+
+    .dialog-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .el-button {
+            margin-top: 15px;
+        }
+    }
+
+}
