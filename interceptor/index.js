@@ -1,6 +1,8 @@
 const interceptor = function (req, res, next) {
     console.log('全局 session->', req.session);
     console.log('全局 body->', req.body)
+    console.log('全局 ip->', req.ip)
+    console.log('全局 connectionRemoteaAddress->', req.connection.remoteaAddress)
     console.log('path:', req.path)
     if (req.path.match(/\/authorization/) || req.path.match(/\/upload/)) {
         console.log('放行！！！！！！！！！');

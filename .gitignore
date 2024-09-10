@@ -1,5 +1,7 @@
 node_modules
 uploads
 dist
-Vue_Todolist/dist
-Vue_Todolist/*.zip
+Vue-Todolist/node_modules
+Vue-Todolist/dist
+Vue-Todolist/*.zip
+Vue-Todolist/todolist
