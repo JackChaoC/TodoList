@@ -13,22 +13,22 @@ const exec = (sql, value) => {
         pool.getConnection((err, connection) => {
             if (err) {
                 reject(err)
-            } else {
-                console.log('sql param:',value);
-                connection.query(sql, value ? value : undefined, (err, result) => {
-                    if (err) {
-                        //操作失败
-                        reject(err)
-                    } else {
-                        resolve({
-                            code: 0,
-                            data: result,
-                            message: '操作成功'
-                        })
-                    }
-                    connection.release() // 释放连接
-                })
             }
+            console.log('sql param:', value);
+            connection.query(sql, value ? value : undefined, (err, result) => {
+                if (err) {
+                    //操作失败
+                    reject(err)
+                } else {
+                    resolve({
+                        code: 0,
+                        data: result,
+                        message: '操作成功'
+                    })
+                }
+                connection.release() // 释放连接
+            })
+
 
         })
     })
